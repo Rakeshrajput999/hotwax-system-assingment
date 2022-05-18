@@ -6,7 +6,7 @@
  
 function odd(){
     let x = [];
-    for(let i in a ){
+    for(let i of a ){
         
         if(i%2!==0){
             x.push(i)
@@ -18,7 +18,7 @@ function odd(){
 
 function even (){
     let x=[]
-    for(let i in a){
+    for(let i of a){
         if (i%2==0){
             x.push(i)
         }
@@ -44,7 +44,7 @@ function isprime(n){
 
 function primenum(){
     let p=[]
-    for (let i in a){
+    for (let i of a){
         if (i>1){
             let x=isprime(i)
             if (x==true){
@@ -57,10 +57,10 @@ function primenum(){
     return p
 }
 
-// var q = odd()
-// console.log(q)
-// var r = even()
-// console.log(r)
+var q = odd()
+console.log(q)
+var r = even()
+console.log(r)
 
 var p = primenum()
 console.log(p)
